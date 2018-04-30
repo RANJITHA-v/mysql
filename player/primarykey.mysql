@@ -1,0 +1,10 @@
+CREATE database company;
+use company;
+SHOW databases;
+CREATE table employee(employee_id varchar(15) NOT NULL,
+                         company_name char(20)  NOT NULL,
+                         salary int(10) NULL,
+                         primary key (employee_id));
+SHOW columns from employee;
+
+
