@@ -1,0 +1,17 @@
+create database query;
+use query;
+show databases;
+create table student
+(roll_no VARCHAR(15) NOT NULL ,
+NAME CHAR(16) NOT NULL,
+COLLEGE CHAR (10) NULL,
+DEPT CHAR (12) NULL
+);
+insert into student(roll_no,NAME,COLLEGE,DEPT)values('15bec086','Ranjitha','kct','ece');
+insert into student(roll_no,NAME,COLLEGE,DEPT)values('15bec078','bhava','kct','ece');
+insert into student(roll_no,NAME,COLLEGE,DEPT)values('15bec092','dharsu','kct','ece');
+insert into student(roll_no,NAME,COLLEGE,DEPT)values('15bec082','moni','kct','ece');
+insert into student(roll_no,NAME,COLLEGE,DEPT)values('15bec083 ','situ','kct','ece');
+insert into student(roll_no,NAME,COLLEGE,DEPT)values('15bec086','Ranjitha','kct','ece');
+select count(*) from student;
+select distinct name  from student;
