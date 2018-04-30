@@ -1,0 +1,32 @@
+# mysql
+create database students;
+use students;
+show databases;
+CREATE table my_friends
+    (roll_no  VARCHAR(15) NOT NULL,
+    name  VARCHAR(15) NOT NULL,
+    age int(10) NULL,
+    sex char(15) NULL);
+    show columns from my_friends;
+insert into my_friends(roll_no,name) values('15bec083','situ');
+alter table my_friends  ADD dept char(10) NOT NULL;
+show columns from my_friends;
+alter table my_friends drop dept;
+show columns from my_friends;
+select * from my_friends;
+CREATE database employee;
+use employee;
+SHOW databases;
+CREATE table information(employee_id varchar(15) NOT NULL,
+                         company_name char(20)  NOT NULL,
+                         salary int(10) NULL);
+SHOW columns from information;
+CREATE DATABASE PRODUCTION;
+USE PRODUCTION;
+CREATE TABLE MYPRODUCTION(ALMOND CHAR(10) NOT NULL,
+BUTTER CHAR(10) NOT NULL,
+JAM CHAR(12) NULL);
+SHOW COLUMNS FROM MYPRODUCTION;
+ALTER TABLE MYPRODUCTION  ADD BREAD CHAR(10);
+SHOW COLUMNS FROM MYPRODUCTION;
+
