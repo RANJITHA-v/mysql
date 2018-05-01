@@ -1,0 +1,13 @@
+create database query;
+use query;
+show databases;
+CREATE TABLE student
+    (id int,name char(15),age int);
+INSERT INTO student VALUES('1','Vinodini','25');
+INSERT INTO student VALUES('2','Banu', '27');
+INSERT INTO student VALUES('3','kaushik', '23');
+INSERT INTO student VALUES('4', 'Praveen', '25');
+INSERT INTO student VALUES('5','Kamal', '22');
+INSERT INTO student VALUES('6', 'Malini', '24');
+INSERT INTO student VALUES('7','Ramesh', '32');
+select  * from  student where age=32 or age=22;
