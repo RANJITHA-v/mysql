@@ -1,0 +1,19 @@
+create database query;
+use query;
+show databases;
+create table employee(name varchar(25),
+age int(10),
+address varchar(20),
+salary int(10)
+);
+show columns from employee;
+insert into employee values('ramesh','32','ahmedabad','2000');
+insert into employee values('Khilan','25',	'Delhi','1500');
+insert into employee values('kaushik',	'23','Kota','2000');
+insert into employee values('Chaitali','25','Mumbai','6500');
+insert into employee values('Hardik','27','Bhopal' ,'8500');
+insert into employee values('komal','22','MP','4500');
+insert into employee values('Muffy','24','Indore','10000');
+select * from employee;
+UPDATE employee SET address='maharashtra' WHERE name='komal';
+select * from employee
